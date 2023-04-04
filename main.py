@@ -32,6 +32,14 @@ traffic_turtles = []
 x = 0
 a = 5
 
+# Turtle movement using "Up"  key
+
+sc.listen()
+
+# Turtle move up
+sc.onkey(player.move, "Up")
+
+
 
 # Game loop
 game_start = True
@@ -40,11 +48,11 @@ while game_start:
     time.sleep(c.traffic_speed)
     
 
-    # player crossing
-    player.move()
+    # # player crossing
+    # player.move()
 
     # Check end of crossing
-    if player.ycor() == 300:
+    if player.ycor() > 280:
         player.goto_start()
         pl_score.increase_score()
         pl_score.increase_speed()
@@ -52,7 +60,7 @@ while game_start:
 
     
     # Create new turtle on every 5th iteration
-    if x % 10 == 0 and  x < 300:
+    if x % 10 == 0 and  x < 500:
         # Generate cars
         c1 = Cars()
         traffic_turtles.append(c1)
