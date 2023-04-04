@@ -11,9 +11,32 @@
 <hr>
 <ol>
     <li><a href="#pong-game">Turtle Crossing Game</a></li>
+    <li><a href="#bloopers">Bloopers</a></li>
 </ol>
 <hr>
 <hr>
+
+## Bloopers <a name="bloopers"></a>
+Worth to see 
+
+Turtles not moving
+
+![Alt text](images/multiple_turtles_not_moving.gif)
+
+Turtles going backwards
+
+![Alt text](images/cars_going_backwards.gif)
+
+
+Superfast traffic
+
+![Alt text](images/superfast_traffic.gif)
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<hr>  
+
+
 
 <!-- 
 
