@@ -2,7 +2,9 @@ from turtle import Turtle, Screen
 import time
 from player import Player
 from cars import Cars
+from scoreboard import Scoreboard
 import random
+
 
 
 # Screen Setup
@@ -11,6 +13,12 @@ sc.setup(800, 650)
 
 # Initiate Turtle
 player = Player()
+
+# Initiate Scoreboard
+pl_score = Scoreboard()
+
+# Initiate Cars
+c = Cars()
 
 # Stop animation
 sc.tracer(0)
@@ -29,6 +37,7 @@ a = 5
 game_start = True
 while game_start:
     sc.update()
+    time.sleep(c.traffic_speed)
     
 
     # player crossing
@@ -37,6 +46,10 @@ while game_start:
     # Check end of crossing
     if player.ycor() == 300:
         player.goto_start()
+        pl_score.increase_score()
+        pl_score.increase_speed()
+        c.increase_traffic_speed()
+
     
     # Create new turtle on every 5th iteration
     if x % 10 == 0 and  x < 300:
@@ -46,9 +59,16 @@ while game_start:
 
     
     for i in traffic_turtles:
+        # Check traffic collision
         if i.distance(player) < 15:
             player.goto_start()
-        
+            c.reset_traffic_speed()
+            pl_score.reset_score()
+            x = 0
+            for j in range(len(traffic_turtles)):
+                traffic_turtles[j].hideturtle()
+            
+            traffic_turtles = []
 
         if i.xcor() < -300:
             i.goto(300, i.ycor())

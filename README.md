@@ -44,6 +44,21 @@ Working Traffic crash.
 
 ![Alt text](images/working_traffic_crash.gif)
 
+Add Score Board
+
+![Alt text](images/Scoreboard.gif)
+
+Traffic not clearing after collision.
+
+![Alt text](images/traffice_not_clearing.gif)
+
+Working Turtle -- Goes from bottom to top.
+Working Traffic -- Traffic created every 10 iterations and gets deleted if Turtle collides with Traffic
+Working ScoreBoard -- Score and speed are updated on every successful crossing of Turtle. Highest score is update only if score is greater than Higest score.
+
+![Alt text](images/working_traffice_turtles_score.gif)
+
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 <hr>  
 
