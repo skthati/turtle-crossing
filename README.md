@@ -32,6 +32,17 @@ Superfast traffic
 
 ![Alt text](images/superfast_traffic.gif)
 
+Traffic going on same axle after a while
+
+![Alt text](images/traffic_became_even.gif)
+
+Ghost logic. Turtle going to start position for no reason.
+
+![Alt text](images/worst_logic.gif)
+
+Working Traffic crash. 
+
+![Alt text](images/working_traffic_crash.gif)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 <hr>  

@@ -19,7 +19,12 @@ sc.tracer(0)
 def random_speed():
     return random.randint(1, 10)
 
+# Traffic Turtles
+traffic_turtles = []
 x = 0
+a = 5
+
+
 # Game loop
 game_start = True
 while game_start:
@@ -33,13 +38,27 @@ while game_start:
     if player.ycor() == 300:
         player.goto_start()
     
-    if x % 5 == 0:
+    # Create new turtle on every 5th iteration
+    if x % 10 == 0 and  x < 300:
         # Generate cars
         c1 = Cars()
+        traffic_turtles.append(c1)
+
     
-    c1.move()
+    for i in traffic_turtles:
+        if i.distance(player) < 15:
+            player.goto_start()
+        
+
+        if i.xcor() < -300:
+            i.goto(300, i.ycor())
+            i.move()
+        else:
+            i.move()
 
     x += 1
+
+    
     
 
     time.sleep(player.p_speed)
