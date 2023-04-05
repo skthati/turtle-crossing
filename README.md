@@ -16,6 +16,28 @@
 <hr>
 <hr>
 
+## Turtle Crossing Game <a name="turtle-crossing"></a>
+Simple game where Turtle has to cross the on coming traffic.
+
+* Turtle speed increases on every successful crossing.
+* Turtle gets 1 point after every successful crossing.
+* Turtle can only go Up. (No left, No right, No backwords).
+* When game starts, player will be asked for their name.
+* Highest score will be updated, if the highest score is less than score.
+
+## Code files.
+[main.py](main.py)
+
+[player.py](player.py)
+
+[cars.py](cars.py)
+
+[scoreboard.py](scoreboard.py)
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<hr> 
+
 ## Bloopers <a name="bloopers"></a>
 Worth to see 
 
@@ -23,34 +45,61 @@ Turtles not moving
 
 ![Alt text](images/multiple_turtles_not_moving.gif)
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<hr> 
+
 Turtles going backwards
 
 ![Alt text](images/cars_going_backwards.gif)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<hr> 
 
 
 Superfast traffic
 
 ![Alt text](images/superfast_traffic.gif)
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<hr> 
+
 Traffic going on same axle after a while
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<hr> 
+
 ![Alt text](images/traffic_became_even.gif)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<hr> 
 
 Ghost logic. Turtle going to start position for no reason.
 
 ![Alt text](images/worst_logic.gif)
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<hr> 
+
 Working Traffic crash. 
 
 ![Alt text](images/working_traffic_crash.gif)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<hr> 
 
 Add Score Board
 
 ![Alt text](images/Scoreboard.gif)
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<hr> 
+
 Traffic not clearing after collision.
 
 ![Alt text](images/traffice_not_clearing.gif)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<hr> 
 
 Working Turtle -- Goes from bottom to top.
 Working Traffic -- Traffic created every 10 iterations and gets deleted if Turtle collides with Traffic
@@ -62,7 +111,12 @@ Working ScoreBoard -- Score and speed are updated on every successful crossing o
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 <hr>  
 
+Ask Player name and update on top
 
+![Alt text](images/ask_player%20name.gif)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<hr> 
 
 <!-- 
 
