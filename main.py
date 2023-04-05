@@ -32,6 +32,10 @@ traffic_turtles = []
 x = 0
 a = 5
 
+# Ask Player name
+pl_score.username = (sc.textinput("Name", "Enter your name: ")).title()
+pl_score.update_name()
+
 # Turtle movement using "Up"  key
 
 sc.listen()
@@ -40,13 +44,16 @@ sc.listen()
 sc.onkey(player.move, "Up")
 
 
-
 # Game loop
 game_start = True
 while game_start:
     sc.update()
     time.sleep(c.traffic_speed)
     
+    # if x == 0:
+    #     pl_score.username = sc.textinput("Name", "Enter your name: ")
+    #     pl_score.update_name()
+
 
     # # player crossing
     # player.move()
